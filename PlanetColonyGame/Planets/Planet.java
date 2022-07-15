@@ -1,15 +1,12 @@
 package PlanetColonyGame.Planets;
 interface planetInterface{
-    int getTemperature();
-    double getOxygen();
-    double getWater();
-    double getIce();
-    double getMinerals();
+   public void generatePlanet();
+   public String getDescription();
 };
 public abstract class Planet implements planetInterface{
-    int temperature;
-    double oxygen;
-    double water;
-    double ice;
-    double minerals;
+    public int temperature;
+    public double oxygen;
+    public double water;
+    public double ice;
+    public double minerals;
 }
