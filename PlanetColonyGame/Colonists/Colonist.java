@@ -1,29 +1,18 @@
 package PlanetColonyGame.Colonists;
 import PlanetColonyGame.Colonists.Jobs.*;
+import PlanetColonyGame.Inventory.Inventory;
 import PlanetColonyGame.Planets.Planet;
 
 import com.github.javafaker.Faker; //https://github.com/DiUS/java-faker for generating names.
 import java.util.Random;
 public class Colonist {
-    Planet planet;
     int health;
     boolean healthy;
     String name;
     Job job;
     int aptitude; //determines how much of a resource they will produce. Their aptitude grows over time.
-    public Colonist(Planet p){
-        this.planet = p;
-        JobGenerator gen = new JobGenerator();
-        this.job = gen.generateJob(planet);
-        Faker faker = new Faker();
-        this.name = faker.name().name();
-        Random rand = new Random();
-        this.aptitude = rand.nextInt(1, 10);
-    }
-    //remove later
-    public Colonist(){
-        JobGenerator gen = new JobGenerator();
-        this.job = gen.generateJob(planet);
+    public Colonist(Planet p, JobGenerator j){
+        this.job = j.generateJob();
         Faker faker = new Faker();
         this.name = faker.name().name();
         Random rand = new Random();
@@ -45,7 +34,7 @@ public class Colonist {
     public void makeSick(){
         this.healthy = false;
     }
-    public void work(){
-        job.doWork(aptitude, planet);
+    public void work(Planet p, Inventory i){
+        job.doWork(aptitude, p);
     }
 }
