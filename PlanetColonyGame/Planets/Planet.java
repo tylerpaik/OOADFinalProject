@@ -1,4 +1,11 @@
 package PlanetColonyGame.Planets;
+
+import java.util.ArrayList;
+
+import PlanetColonyGame.Colonists.Jobs.JobTypes;
+import PlanetColonyGame.Observer.WorldObserver;
+import PlanetColonyGame.Observer.WorldState;
+
 interface planetInterface{
    public void generatePlanet();
    public String getDescription();

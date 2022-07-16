@@ -2,6 +2,7 @@ package PlanetColonyGame.Tests;
 import org.junit.Test;
 import java.util.ArrayList;
 import PlanetColonyGame.Planets.*;
+import PlanetColonyGame.ColonyManager;
 import PlanetColonyGame.Colonists.Colonist;
 import com.github.javafaker.Faker;
 public class test {
@@ -34,5 +35,9 @@ public class test {
     public void testDivide(){
         int test = 5;
         System.out.println(test/2);
+    }
+    @Test
+    public void testColonyGen(){
+        ColonyManager c = new ColonyManager();
     }
 }
