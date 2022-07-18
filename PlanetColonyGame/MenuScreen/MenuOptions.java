@@ -1,22 +1,24 @@
 package PlanetColonyGame.MenuScreen;
 
-public class MenuOptions {
-    private void newGame(){
+import PlanetColonyGame.ColonyManager;
 
+public class MenuOptions {
+    protected void newGame(){
+        ColonyManager c = new ColonyManager();
     }
-    private void newGame(){
+    protected void saveGame(){
         
     }
-    private void newGame(){
+    protected void loadGame(){
         
     }
-    private void newGame(){
+    protected void cheatCodes(){
         
     }
-    private void credits(){
+    protected void credits(){
         
     }
-    private void exitGame(){
+    protected void quitGame(){
         
     }
 }

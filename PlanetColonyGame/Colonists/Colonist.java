@@ -18,6 +18,9 @@ public class Colonist {
         Random rand = new Random();
         this.aptitude = rand.nextInt(1, 10);
     }
+    public String getName(){
+        return job.getName();
+    }
     public String getJob(){
         return job.getName();
     }

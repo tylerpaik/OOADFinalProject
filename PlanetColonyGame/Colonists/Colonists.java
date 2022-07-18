@@ -36,4 +36,8 @@ public class Colonists {
     public void addColonist(JobTypes j){
         colonists.add(new Colonist(worldObserver.getPlanet(), jobGenerator));
     }
+    //return colonists
+    public ArrayList<Colonist> getColonists(){
+        return colonists;
+    }
 }

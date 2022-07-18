@@ -21,8 +21,20 @@ public class Menu {
     }
 
     private void menuActions(int i){
+        MenuOptions options = new MenuOptions();
         switch(i){
-            case 1: 
+            case 1: options.newGame();
+            break;
+            case 2: options.saveGame();
+            break;
+            case 3: options.loadGame();
+            break;
+            case 4: options.cheatCodes();
+            break;
+            case 5: options.credits();
+            break;
+            case 6: options.quitGame();
+            break;
         }
     }
 }
