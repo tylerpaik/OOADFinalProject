@@ -1,4 +1,4 @@
-package PlanetColonyGame.MenuScreen;
+package PlanetColonyGame.Screens;
 import java.io.IOException;
 import PlanetColonyGame.Methods;
 

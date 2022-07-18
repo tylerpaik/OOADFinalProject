@@ -1,4 +1,4 @@
-package PlanetColonyGame.MenuScreen;
+package PlanetColonyGame.Screens;
 
 import PlanetColonyGame.ColonyManager;
 
