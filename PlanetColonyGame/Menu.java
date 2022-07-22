@@ -1,6 +1,5 @@
-package PlanetColonyGame.Screens;
+package PlanetColonyGame;
 import java.io.IOException;
-import PlanetColonyGame.Methods;
 
 public class Menu {
     Menu() throws IOException{
@@ -20,7 +19,7 @@ public class Menu {
         System.out.println("6. Quit Game");
     }
 
-    private void menuActions(int i){
+    private void menuActions(int i) throws IOException{
         MenuOptions options = new MenuOptions();
         switch(i){
             case 1: options.newGame();
