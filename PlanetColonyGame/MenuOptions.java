@@ -3,16 +3,16 @@ package PlanetColonyGame;
 import java.io.IOException;
 
 public class MenuOptions {
-    protected void newGame(){
+    protected void newGame() throws IOException{
         Game game = new Game();
     }
-    protected void saveGame() throws IOException{
+    protected void saveGame(Game game) throws IOException{
         System.out.println("Save system has not been implemented.");
-        Menu menu = new Menu();
+        Menu menu = new Menu(game);
     }
-    protected void loadGame() throws IOException{
+    protected void loadGame(Game game) throws IOException{
         System.out.println("Load system has not been implemented.");
-        Menu menu = new Menu();
+        Game g = new Game(game);
     }
     protected void cheatCodes() throws IOException{
         System.out.println("Enter cheat code:");

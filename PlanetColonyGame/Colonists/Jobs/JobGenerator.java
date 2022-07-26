@@ -15,7 +15,7 @@ public class JobGenerator {
     public Job generateJob(){
         ArrayList<JobTypes> availableJobs = worldObserver.getAvailableJobs();
         Random rand = new Random();
-        int choice = rand.nextInt(0, availableJobs.size());
+        int choice = rand.nextInt(availableJobs.size());
         JobTypes theJob = availableJobs.get(choice);
         if(theJob.equals(JobTypes.MINER)) return new Miner();
         else if (theJob.equals(JobTypes.HARVESTER)) return new Harvester();

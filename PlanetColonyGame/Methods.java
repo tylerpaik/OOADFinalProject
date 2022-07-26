@@ -13,4 +13,12 @@ public class Methods {
         int i = Integer.parseInt(input);
         return i;
     }
+    public double rand(){
+        double d = Math.random();
+        return d;
+    }
+    public int randInt(){
+        int i = (int) Math.ceil(rand() * 10.0);
+        return i;
+    }
 }
