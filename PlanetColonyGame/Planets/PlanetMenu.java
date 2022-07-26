@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import PlanetColonyGame.*;
 
-public class PlanetMenu {
+public class PlanetMenu {   //menu to handle planet changes and info viewing
     public PlanetMenu(Game game) throws IOException{
         System.out.println("Planet Menu");
         System.out.println();

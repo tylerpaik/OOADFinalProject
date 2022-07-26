@@ -1,14 +1,8 @@
 package PlanetColonyGame.Planets;
 
-import java.util.ArrayList;
-
-import PlanetColonyGame.Colonists.Jobs.JobTypes;
-import PlanetColonyGame.Observer.WorldObserver;
-import PlanetColonyGame.Observer.WorldState;
-
 interface planetInterface{
    public void generatePlanet();
-   public String getDescription();
+   public String getDescription(); //planet base
 };
 public abstract class Planet implements planetInterface{
     public int temperature;

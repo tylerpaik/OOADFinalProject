@@ -5,7 +5,7 @@ import java.io.IOException;
 import PlanetColonyGame.*;
 
 public class JobsMenu {
-    public JobsMenu(Game game) throws IOException{
+    public JobsMenu(Game game) throws IOException{ //menu to handle job changes and info viewing
         System.out.println("Jobs Menu");
         System.out.println();
         System.out.println("0. Back");

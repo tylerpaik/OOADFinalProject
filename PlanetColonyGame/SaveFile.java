@@ -9,7 +9,7 @@ import PlanetColonyGame.Planets.Planet;
 
 import java.io.*;
 
-public class SaveFile {
+public class SaveFile { //unfinished way to print current state to a text file to act as a save
     SaveFile(WorldObserver o, String name){
         SaveFileConversions convert = new SaveFileConversions(o);
         try{

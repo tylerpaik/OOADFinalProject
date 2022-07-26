@@ -2,7 +2,6 @@ package PlanetColonyGame.Colonists.Jobs;
 import java.util.Random;
 import PlanetColonyGame.Observer.WorldObserver;
 import PlanetColonyGame.Observer.WorldState;
-import PlanetColonyGame.Planets.Planet;
 import java.util.ArrayList;
 public class JobGenerator {
     WorldState worldState;

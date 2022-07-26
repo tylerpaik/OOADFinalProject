@@ -8,7 +8,7 @@ import PlanetColonyGame.Colonists.Jobs.JobTypes;
 import PlanetColonyGame.Inventory.Inventory;
 import PlanetColonyGame.Planets.Planet;
 
-public class WorldState implements Subject{
+public class WorldState implements Subject{     //handles observers
     private ArrayList<Observer> observers;
     public Planet planet;
     public Colonists colonists;

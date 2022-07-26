@@ -10,7 +10,7 @@ import PlanetColonyGame.Planets.Planet;
 
 public class SaveFileConversions {
     SaveFileConversions(WorldObserver o){
-        ArrayList<String> dataList = new ArrayList<String>();
+        ArrayList<String> dataList = new ArrayList<String>(); //converting all game info into strings to write to text file in SaveFile.java
 
         Planet planet = o.getPlanet();
         

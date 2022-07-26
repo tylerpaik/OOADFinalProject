@@ -17,7 +17,7 @@ import PlanetColonyGame.Planets.Planet;
 import PlanetColonyGame.Planets.PlanetMenu;
 import PlanetColonyGame.Store.StoreMenu;
 
-public class Game {
+public class Game { //game, handles GUI, menus, and game infos
     int day = 0;
     Methods m = new Methods();
     WorldObserver worldObserver;
@@ -37,7 +37,7 @@ public class Game {
         runsim(manager);
     }
     public Game(Game game) {
-        this.planet = game.planet;
+        this.planet = game.planet;      //allows save system to send in a game that is in progress
         this.colonists = game.colonists;
         this.inventory = game.inventory;
         this.availableJobs = game.availableJobs;
@@ -49,7 +49,7 @@ public class Game {
         boolean end = false;
         if(day == 0){
             System.out.println();
-            System.out.println("Welcome to the Planet Colony Game!");
+            System.out.println("Welcome to the Planet Colony Game!");   //original sim, menu for initial launch of game
             System.out.println();
             System.out.println("In this game, you control the Colony.");
             System.out.println("Will you develop a self-sufficient civilization, or fall victim of the galaxy's mercy?");
@@ -65,7 +65,7 @@ public class Game {
     }
     private void nextDay(int day) throws IOException {
         System.out.println();
-        System.out.println("Colony Day " + day + ":");
+        System.out.println("Colony Day " + day + ":");  //daily things. Eventually would cause daily things like colonist and planet to change
         System.out.println();
         display();
     }
@@ -76,7 +76,7 @@ public class Game {
         System.out.println("2. Buildings");
         System.out.println("3. Tools");
         System.out.println("4. Colonists");
-        System.out.println("5. Jobs");
+        System.out.println("5. Jobs");          //daily menu
         System.out.println("6. Inventory");
         System.out.println("7. Store");
         System.out.println("8. Next Day");
@@ -98,7 +98,7 @@ public class Game {
             break;
             case 4: new ColonistsMenu(this);
             break;
-            case 5: new JobsMenu(this);
+            case 5: new JobsMenu(this);         //sends player to desired menu or progresses or exits game.
             break;
             case 6: new InventoryMenu(this);
             break;

@@ -5,7 +5,7 @@ import java.io.IOException;
 import PlanetColonyGame.*;
 
 public class InventoryMenu {
-    public InventoryMenu(Game game) throws IOException{
+    public InventoryMenu(Game game) throws IOException{ //menu to handle inventory changes and info viewing
         System.out.println("Inventory Menu");
         System.out.println();
         System.out.println("0. Back");

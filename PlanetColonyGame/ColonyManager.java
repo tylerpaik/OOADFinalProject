@@ -17,7 +17,7 @@ public class ColonyManager {
     WorldObserver worldObserver;
     WorldState worldState;
     Planet planet;
-    Colonists colonists;
+    Colonists colonists;        //manages creation of planet
     Inventory inventory;
     ArrayList<JobTypes> availableJobs;
     public ColonyManager() throws IOException{

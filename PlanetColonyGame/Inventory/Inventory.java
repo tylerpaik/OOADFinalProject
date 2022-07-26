@@ -2,10 +2,9 @@ package PlanetColonyGame.Inventory;
 
 import PlanetColonyGame.Observer.WorldObserver;
 import PlanetColonyGame.Observer.WorldState;
-import PlanetColonyGame.Planets.Planet;
 
 public class Inventory {
-    WorldObserver worldObserver;
+    WorldObserver worldObserver;    //handles creation and tracking of inventory.
     WorldState worldState;
     public int numMedicine, numCredits, numIce, numOxygen, numFood;
     public Inventory(WorldState ws){

@@ -5,7 +5,7 @@ import java.io.IOException;
 import PlanetColonyGame.*;
 
 public class ColonistsMenu {
-    public ColonistsMenu(Game game) throws IOException{
+    public ColonistsMenu(Game game) throws IOException{ //menu to handle colonist changes and info viewing
         System.out.println("Colonists Menu");
         System.out.println();
         System.out.println("0. Back");

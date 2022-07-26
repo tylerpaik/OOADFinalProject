@@ -2,13 +2,13 @@ package PlanetColonyGame.Colonists.Jobs;
 import PlanetColonyGame.Inventory.ResourceTypes;
 import PlanetColonyGame.Planets.Planet;
 
-public interface Job {
+public interface Job {      //STRATEGY PATTERN
     Yield doWork(int aptitude, Planet p);
     JobTypes getType();
     String getName();
 }
 
-class Yield{
+class Yield{        //what each job produces
     ResourceTypes type;
     int count;
     Yield(ResourceTypes r, int c){
