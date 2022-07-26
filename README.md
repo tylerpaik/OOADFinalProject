@@ -1,4 +1,12 @@
 # OOADFinalProject
+Tyler Paik, Joseph Davis
+
+java version "1.8.0_331"
+
+Java(TM) SE Runtime Environment (build 1.8.0_331-b09)
+
+Java HotSpot(TM) 64-Bit Server VM (build 25.331-b09, mixed mode)
+
 Colony Manager
 
 Manage a colony of people on a new planet. Similar to Oregon Trail, decisions are given at certain points which may spell disaster for your colony.
