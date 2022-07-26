@@ -13,6 +13,7 @@ public class ToolsMenu {
         System.out.println("Enter corresponding number:");
         System.out.println();
         int input = new Methods().receiveInputInt();
+        System.out.println();
         switch(input){
             case 0: game.display();
             break;

@@ -43,9 +43,9 @@ public class Menu {
             break;
             case 4: options.cheatCodes();
             break;
-            case 5: options.credits();
+            case 5: options.credits(game);
             break;
-            case 6: options.quitGame();
+            case 6: options.quitGame(game);
             break;
             default: Menu m = new Menu(null);
         }

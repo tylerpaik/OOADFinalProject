@@ -66,6 +66,7 @@ public class WorldState implements Subject{     //handles observers
     }
     public void printWorldState(){
         System.out.println("Current world state: " );
+        System.out.println();
         if(planet!=null){
             System.out.println("Planet:");
             System.out.println("    Ice: " + planet.ice);
@@ -88,5 +89,31 @@ public class WorldState implements Subject{     //handles observers
             System.out.println("    Oxygen: " + inventory.numOxygen);
         }
     }
-
+    public void printPlanetState(){
+        if(planet!=null){
+            System.out.println("Current planet:");
+            System.out.println("    Ice: " + planet.ice);
+            System.out.println("    Oxygen: " + planet.oxygen);
+            System.out.println("    Temperature: " + planet.temperature);
+            System.out.println("    Water: " + planet.water);
+        }
+    }
+    public void printColonistState(){
+        if(colonists!=null){
+            System.out.println("Current colonists: ");
+            for(Colonist c : colonists.colonists){
+                System.out.println("    "+ c.getName() + " ("+c.getJob()+")");
+            }
+        }
+    }
+    public void printInventoryState(){
+        if(inventory!= null){
+            System.out.println("Current colony Inventory: ");
+            System.out.println("    Credits: "+ inventory.numCredits);
+            System.out.println("    Food: " + inventory.numFood);
+            System.out.println("    Ice: " + inventory.numIce);
+            System.out.println("    Medicine: " + inventory.numMedicine);
+            System.out.println("    Oxygen: " + inventory.numOxygen);
+        }
+    }
 }

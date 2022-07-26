@@ -58,9 +58,11 @@ public class Game { //game, handles GUI, menus, and game infos
             System.out.println();
         }
         while(end == false){
+            if(day <= -80){
+                break;
+            }
             day++;
             nextDay(day);
-            end = true;
         }
     }
     private void nextDay(int day) throws IOException {
@@ -110,5 +112,8 @@ public class Game { //game, handles GUI, menus, and game infos
             break;
             default: display();
         }
+    }
+    public WorldState getWorldState(){
+        return this.worldState;
     }
 }
