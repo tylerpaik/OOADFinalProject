@@ -1,5 +1,7 @@
 package PlanetColonyGame.Tests;
 import org.junit.Test;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import PlanetColonyGame.Planets.*;
 import PlanetColonyGame.ColonyManager;
@@ -11,7 +13,7 @@ public class test {
     public void testColonistGen(){
         ArrayList<Colonist> test = new ArrayList<>();
         for(int i = 0; i < 100; i++){
-            test.add(new Colonist());
+            test.add(new Colonist(null, null));
             System.out.println(test.get(i).getJob());
             System.out.println(test.get(i).getName());
         }
@@ -37,7 +39,7 @@ public class test {
         System.out.println(test/2);
     }
     @Test
-    public void testColonyGen(){
+    public void testColonyGen() throws IOException{
         ColonyManager c = new ColonyManager();
     }
 }

@@ -15,7 +15,7 @@ public class Farmer implements Job{
                 upperBound = upperBound/2;
             }
         }
-        int seed = rand.nextInt(0, upperBound);
+        int seed = rand.nextInt(upperBound);
         return new Yield(ResourceTypes.FOOD, seed);
         
     }

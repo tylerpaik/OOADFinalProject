@@ -10,7 +10,7 @@ public class Miner implements Job{
         Random rand = new Random();
         //has a chance of producing between 0 and 100 based on aptitude, planet water/oxygen.
         int upperBound = (int)p.minerals/2;
-        int seed = rand.nextInt(0, upperBound);
+        int seed = rand.nextInt(upperBound);
         return new Yield(ResourceTypes.FOOD, seed); //supposed to be food?
     }
     @Override

@@ -26,7 +26,7 @@ public class SaveFileConversions {
 
         ArrayList<Colonist> colonistList = colonists.getColonists();
         
-        ArrayList<String> colonistNames
+        ArrayList<String> colonistNames;
         for(int i = 0; i < colonistList.size(); i++){
 
         }

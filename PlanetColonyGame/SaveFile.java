@@ -15,7 +15,7 @@ public class SaveFile { //unfinished way to print current state to a text file t
         try{
             FileWriter myWriter = new FileWriter("Save_" + name + ".txt", true);
             myWriter.append('\n');
-            myWriter.append(planet);
+            myWriter.append("planet");
             myWriter.close();
         }
         catch(IOException e){

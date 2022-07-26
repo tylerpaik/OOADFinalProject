@@ -8,7 +8,7 @@ public class Doctor implements Job {
     public Yield doWork(int aptitude,Planet p) {
         Random rand = new Random();
         //has a chance of producing between 0 and 5 based on aptitude.
-        int seed = rand.nextInt(0, aptitude/2);
+        int seed = rand.nextInt(aptitude/2);
         return new Yield(ResourceTypes.MEDICINE, seed);
     }
 
